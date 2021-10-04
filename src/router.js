@@ -12,15 +12,19 @@ export default new Router({
     routes: [
     {
         path: '/:tipo',
+        name: 'list',
         component: Listagem
     },{
         path:'/:tipo/detalhamento/:id',
+        name: 'detalher',
         component: Detalhamento
     },{
         path:'/:tipo/editar/:id',
+        name: 'editar',
         component: Editar
     },{
         path:'/:tipo/cadastra/',
+        name: 'cadastro',
         component: Editar
     },
 ]
